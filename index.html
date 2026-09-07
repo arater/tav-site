@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#141516">
+<meta name="theme-color" content="#201e1d">
 <title>Tavus Law</title>
 <meta name="description" content="Tavus Law brings the enduring principles of Roman law to the frontiers of technology. Litigation partners in New York, Istanbul, London, Dubai, Singapore, Warsaw, Moscow, Beijing, Hong Kong, Madrid and Los Angeles.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -15,14 +15,17 @@
 <style>
 :root {
   color-scheme: dark;
-  --color-text: #141516;
-  --color-neutral-100: #f1f0ed;
-  --color-neutral-300: #d0cfca;
-  --color-neutral-400: #b2b1ab;
-  --color-neutral-500: #999a96;
-  --color-neutral-600: #62635e;
-  --color-neutral-700: #353735;
-  --color-accent: #c5a77d;
+  --color-text: #201e1d;
+  --color-neutral-100: #f8f4f4;
+  --color-neutral-300: #d7d3d3;
+  --color-neutral-400: #bab6b6;
+  --color-neutral-500: #9b9797;
+  --color-neutral-600: #7d7979;
+  --color-neutral-700: #605d5d;
+  --color-neutral-800: #444141;
+  --color-neutral-900: #2d2b2b;
+  --color-accent: #ec3013;
+  --color-accent-400: #ff9783;
   --font-body: 'Archivo', Arial, sans-serif;
   --font-heading: 'Archivo', Arial, sans-serif;
 }
@@ -31,34 +34,35 @@ html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--color-text); color: var(--color-neutral-100); }
 button, a { -webkit-tap-highlight-color: transparent; }
 a { color: inherit; text-decoration: none; }
-a:hover { color: var(--color-accent); }
+a:hover { color: var(--color-accent-400); }
 a:focus-visible, button:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 5px; }
-::selection { background: #c5a77d; color: #141516; }
+::selection { background: color-mix(in srgb, var(--color-accent) 45%, transparent); }
 .tl-page { font-family: var(--font-body); font-size: 1.0625rem; line-height: 1.65; min-height: 100vh; text-wrap: pretty; }
 .tl-shell { max-width: 1344px; margin-inline: auto; padding-inline: clamp(24px, 5.6vw, 80px); }
-.tl-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding-block: 24px; border-bottom: 1px solid var(--color-neutral-700); }
+.tl-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding-block: 24px; border-bottom: 2px solid var(--color-neutral-800); }
 .tl-wordmark { display: inline-block; font-family: var(--font-heading); font-size: 0.9375rem; font-weight: 800; font-stretch: 120%; letter-spacing: 0.22em; line-height: 1.8; text-transform: uppercase; white-space: nowrap; }
 .tl-languages { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 4px; }
 .tl-language { position: relative; appearance: none; border: 0; background: transparent; border-radius: 0; padding: 10px 8px; margin: 0; min-width: 40px; min-height: 44px; font: 500 0.8125rem/1.8 var(--font-body); letter-spacing: 0.06em; color: var(--color-neutral-500); cursor: pointer; transition: color 160ms ease; }
 .tl-language::after { content: ''; position: absolute; inset-inline: 9px; bottom: 4px; height: 2px; background: transparent; transition: background-color 160ms ease; }
-.tl-language:hover, .tl-language[aria-pressed='true'] { color: var(--color-neutral-100); }
+.tl-language:hover { color: var(--color-accent-400); }
+.tl-language[aria-pressed='true'] { color: var(--color-neutral-100); }
 .tl-language[aria-pressed='true']::after { background: var(--color-accent); }
 .tl-hero { position: relative; isolation: isolate; overflow: hidden; display: flex; align-items: flex-end; min-height: clamp(530px, 72svh, 760px); padding-block: clamp(64px, 8vw, 112px); }
 .tl-backdrop { position: absolute; inset-block: 0; inset-inline-end: 0; width: 76%; overflow: hidden; z-index: -1; pointer-events: none; user-select: none; }
-.tl-corpus { margin: 0; font: 500 0.75rem/2.35 var(--font-body); font-stretch: 110%; letter-spacing: 0.065em; text-transform: uppercase; text-align: justify; color: #46463f; }
+.tl-corpus { margin: 0; font: 500 0.75rem/2.35 var(--font-body); font-stretch: 110%; letter-spacing: 0.065em; text-transform: uppercase; text-align: justify; color: var(--color-neutral-800); }
 .tl-hero-content { width: 100%; }
 .tl-hero-content::before { content: ''; display: block; width: 40px; height: 2px; background: var(--color-accent); margin-block-end: 32px; }
 .tl-hero h1 { font-family: var(--font-heading); font-size: clamp(2.375rem, 4.8vw, 4.5rem); font-weight: 650; font-stretch: 105%; line-height: 1.12; letter-spacing: -0.04em; max-width: 22ch; margin: 0; margin-inline-start: -0.025em; text-wrap: balance; }
-.tl-partners { border-top: 1px solid var(--color-neutral-700); border-bottom: 1px solid var(--color-neutral-700); padding-block: clamp(40px, 5vw, 64px); }
+.tl-partners { border-top: 2px solid var(--color-neutral-800); border-bottom: 2px solid var(--color-neutral-800); padding-block: clamp(40px, 5vw, 64px); }
 .tl-section-heading { display: flex; align-items: center; gap: 12px; margin-block-end: 32px; }
-.tl-section-heading::before { content: ''; width: 6px; height: 6px; flex: 0 0 6px; background: var(--color-accent); }
+.tl-section-heading::before { content: ''; width: 10px; height: 10px; flex: 0 0 10px; background: var(--color-accent); }
 .tl-section-heading h2 { margin: 0; font-size: 0.875rem; line-height: 1.5; font-weight: 400; letter-spacing: 0.11em; text-transform: uppercase; color: var(--color-neutral-400); }
 .tl-cities { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 0.65em; padding: 0; margin: 0; list-style: none; }
 .tl-city { display: inline-flex; align-items: baseline; gap: 0.65em; font-family: var(--font-heading); font-size: clamp(1.125rem, 2.05vw, 1.875rem); font-weight: 550; font-stretch: 110%; line-height: 1.45; letter-spacing: 0.055em; text-transform: uppercase; }
 .tl-city-name { white-space: nowrap; }
-.tl-separator { color: var(--color-neutral-600); font-weight: 400; }
+.tl-separator { color: var(--color-neutral-700); font-weight: 400; }
 .tl-cities-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 0 40px; }
-.tl-cities-list .tl-city { padding-block: 14px; border-bottom: 1px solid var(--color-neutral-700); }
+.tl-cities-list .tl-city { padding-block: 14px; border-bottom: 2px solid var(--color-neutral-800); }
 .tl-note { font-size: 1rem; line-height: 1.75; color: var(--color-neutral-400); max-width: 65ch; margin: 32px 0 0; }
 .tl-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding-block: 28px 40px; color: var(--color-neutral-500); }
 .tl-footer .tl-wordmark { color: var(--color-neutral-300); font-size: 0.75rem; }
