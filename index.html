@@ -2,19 +2,52 @@
 <html lang="la" dir="ltr">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-UevLSrpMoRnIDE9sP0r/vTwVunWoQeQlPZiEXFuJTGk='; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-KsmfHVIO+2P/nIk6DU9aVa1AGYqprcaQ/WqjevoAloo=' 'sha256-UoSOxrKs9EFMiXZrfagxaMq7JXoJt1mICDHya04qk+A='; style-src 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#201e1d">
 <title>Tavus Law</title>
-<meta name="description" content="Tavus Law brings the enduring principles of Roman law to the frontiers of technology. Litigation partners in New York, Istanbul, London, Dubai, Singapore, Warsaw, Moscow, Beijing, Hong Kong, Madrid and Los Angeles.">
+<meta name="description" content="Ankara-based Tavus Law brings the enduring principles of Roman law to the frontiers of technology. Local litigation counsel in New York, Istanbul, London, Dubai, Singapore, Warsaw, Moscow, Beijing, Hong Kong, Madrid and Los Angeles.">
+<link rel="canonical" href="https://tav.us/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tavus Law">
+<meta property="og:title" content="Tavus Law">
+<meta property="og:description" content="We bring the enduring principles of Roman law to the frontiers of technology.">
+<meta property="og:url" content="https://tav.us/">
+<meta property="og:image" content="https://tav.us/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Tavus Law. We bring the enduring principles of Roman law to the frontiers of technology.">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.ico?v=2" sizes="any">
 <link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png?v=2" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap">
+<link rel="preload" href="fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://tav.us/#website","url":"https://tav.us/","name":"Tavus Law"},{"@type":"Organization","@id":"https://tav.us/#organization","url":"https://tav.us/","name":"Tavus Law","logo":"https://tav.us/apple-touch-icon.png","address":{"@type":"PostalAddress","addressLocality":"Ankara","addressCountry":"TR"}}]}</script>
+<script>
+/* A visitor who chose another language before, or who followed a ?lang= link: keep the page unpainted until the
+   script at the end of <body> has put that language in, so the Latin page never flashes first. That script shows
+   the page again; if it ever fails, DOMContentLoaded does. */
+try {
+  if (((new URLSearchParams(location.search).get('lang') || '').toLowerCase() || localStorage.getItem('tavus-law-lang') || 'la') !== 'la') {
+    document.documentElement.classList.add('tl-i18n-pending');
+    document.addEventListener('DOMContentLoaded', function () { document.documentElement.classList.remove('tl-i18n-pending'); });
+  }
+} catch (e) {}
+</script>
 <style>
+/* Self-hosted fonts (SIL Open Font License, see fonts/). Arabic and Cyrillic have their own files, fetched only for those languages. */
+@font-face { font-family: 'Archivo'; font-style: normal; font-weight: 100 900; font-stretch: 62% 125%; font-display: swap; src: url(fonts/archivo-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Archivo'; font-style: normal; font-weight: 100 900; font-stretch: 62% 125%; font-display: swap; src: url(fonts/archivo-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'TikTok Sans'; font-style: normal; font-weight: 300 900; font-stretch: 75% 150%; font-display: swap; src: url(fonts/tiktok-sans-cyrillic.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: 'Readex Pro'; font-style: normal; font-weight: 160 700; font-display: swap; src: url(fonts/readex-pro-arabic.woff2) format('woff2'); unicode-range: U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7, U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1; }
+/* Stand-ins used only until a web font has loaded: Arial reshaped to that font's widths, so the swap does not re-wrap any text. */
+@font-face { font-family: 'Archivo Fallback Head'; src: local('Arial Bold'), local('Arial-BoldMT'); font-weight: 100 900; size-adjust: 103.2%; ascent-override: 85.1%; descent-override: 20.3%; line-gap-override: 0%; unicode-range: U+0021-02FF, U+2000-206F; }
+@font-face { font-family: 'Archivo Fallback Head'; src: local('Arial Bold'), local('Arial-BoldMT'); font-weight: 100 900; size-adjust: 79.8%; ascent-override: 110%; descent-override: 26.3%; line-gap-override: 0%; unicode-range: U+0020; }
+@font-face { font-family: 'Archivo Fallback Wide'; src: local('Arial Bold'), local('Arial-BoldMT'); font-weight: 100 900; size-adjust: 110.6%; ascent-override: 79.4%; descent-override: 19%; line-gap-override: 0%; unicode-range: U+0000-02FF, U+2000-206F; }
+@font-face { font-family: 'Cyrillic Fallback'; src: local('Arial'), local('ArialMT'); font-weight: 100 499; size-adjust: 106%; unicode-range: U+0400-04FF; }
+@font-face { font-family: 'Cyrillic Fallback'; src: local('Arial Bold'), local('Arial-BoldMT'); font-weight: 500 599; size-adjust: 108.7%; unicode-range: U+0400-04FF; }
+@font-face { font-family: 'Cyrillic Fallback'; src: local('Arial Bold'), local('Arial-BoldMT'); font-weight: 600 900; size-adjust: 105.9%; unicode-range: U+0400-04FF; }
 :root {
   color-scheme: dark;
   --color-text: #201e1d;
@@ -28,143 +61,191 @@
   --color-neutral-900: #2d2b2b;
   --color-accent: #ec3013;
   --color-accent-400: #ff9783;
-  --font-body: 'Archivo', Arial, sans-serif;
-  --font-heading: 'Archivo', Arial, sans-serif;
+  --font-body: 'Archivo', 'TikTok Sans', 'Cyrillic Fallback', Arial, sans-serif;
+  --font-heading: 'Archivo', 'TikTok Sans', 'Cyrillic Fallback', Arial, sans-serif;
 }
 * { box-sizing: border-box; }
+.tl-i18n-pending .tl-page, .tl-i18n-fonts .tl-page { display: none; }
 html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--color-text); color: var(--color-neutral-100); }
 button, a { -webkit-tap-highlight-color: transparent; }
 a { color: inherit; text-decoration: none; }
-a:hover { color: var(--color-accent-400); }
+@media (hover: hover) { a:hover { color: var(--color-accent-400); } }
 a:focus-visible, button:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 5px; }
-::selection { background: color-mix(in srgb, var(--color-accent) 45%, transparent); }
+::selection { background: rgba(236, 48, 19, 0.45); color: var(--color-neutral-100); } /* --color-accent at 45% */
 .tl-page { font-family: var(--font-body); font-size: 1.0625rem; line-height: 1.65; min-height: 100vh; text-wrap: pretty; }
-.tl-shell { max-width: 1344px; margin-inline: auto; padding-inline: clamp(24px, 5.6vw, 80px); }
+.tl-shell { max-width: 1344px; margin-inline: auto; padding-inline: clamp(24px, 5.6vw, 80px); display: flex; flex-direction: column; min-height: min(100vh, 1600px); min-height: min(100svh, 1600px); }
+main { flex: 1 0 auto; display: flex; flex-direction: column; }
 .tl-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding-block: 24px; border-bottom: 2px solid var(--color-neutral-800); }
 .tl-wordmark { display: inline-block; font-family: var(--font-heading); font-size: 0.9375rem; font-weight: 800; font-stretch: 120%; letter-spacing: 0.22em; line-height: 1.8; text-transform: uppercase; white-space: nowrap; }
 .tl-languages { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 4px; }
 .tl-language { position: relative; appearance: none; border: 0; background: transparent; border-radius: 0; padding: 10px 8px; margin: 0; min-width: 40px; min-height: 44px; font: 500 0.8125rem/1.8 var(--font-body); letter-spacing: 0.06em; color: var(--color-neutral-500); cursor: pointer; transition: color 160ms ease; }
 .tl-language::after { content: ''; position: absolute; inset-inline: 9px; bottom: 4px; height: 2px; background: transparent; transition: background-color 160ms ease; }
-.tl-language:hover { color: var(--color-accent-400); }
+@media (hover: hover) { .tl-language:hover { color: var(--color-accent-400); } }
 .tl-language[aria-pressed='true'] { color: var(--color-neutral-100); }
 .tl-language[aria-pressed='true']::after { background: var(--color-accent); }
-.tl-hero { position: relative; isolation: isolate; overflow: hidden; display: flex; align-items: flex-end; min-height: clamp(530px, 72svh, 760px); padding-block: clamp(64px, 8vw, 112px); }
-.tl-backdrop { position: absolute; inset-block: 0; inset-inline-end: 0; width: 76%; overflow: hidden; z-index: -1; pointer-events: none; user-select: none; }
+.tl-language-name { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; font-family: sans-serif; } /* the language's own name, read out by screen readers; a system font, so this unseen text never triggers a font download */
+.tl-hero { flex: 1 0 auto; position: relative; isolation: isolate; display: flex; align-items: flex-end; min-height: clamp(530px, 72vh, 760px); min-height: clamp(530px, 72svh, 760px); padding-block: clamp(64px, 8vw, 112px); }
+.tl-backdrop { position: absolute; inset-block: 0; inset-inline-end: 0; width: 76%; overflow: hidden; z-index: -1; pointer-events: none; -webkit-user-select: none; user-select: none; -webkit-mask-image: linear-gradient(to left bottom, #000 25%, transparent 78%); mask-image: linear-gradient(to left bottom, #000 25%, transparent 78%); }
+[dir='rtl'] .tl-backdrop { -webkit-mask-image: linear-gradient(to right bottom, #000 25%, transparent 78%); mask-image: linear-gradient(to right bottom, #000 25%, transparent 78%); }
 .tl-corpus { margin: 0; font: 500 0.75rem/2.35 var(--font-body); font-stretch: 110%; letter-spacing: 0.065em; text-transform: uppercase; text-align: justify; color: var(--color-neutral-800); }
+.tl-corpus::before { content: attr(data-text); } /* decoration: drawn by CSS so it is not part of the page text */
 .tl-hero-content { width: 100%; }
 .tl-hero-content::before { content: ''; display: block; width: 40px; height: 2px; background: var(--color-accent); margin-block-end: 32px; }
-.tl-hero h1 { font-family: var(--font-heading); font-size: clamp(2.375rem, 4.8vw, 4.5rem); font-weight: 650; font-stretch: 105%; line-height: 1.12; letter-spacing: -0.04em; max-width: 22ch; margin: 0; margin-inline-start: -0.025em; text-wrap: balance; }
+/* Headline size. Floor and ceiling are in rem, so they follow the visitor's text size. The fluid middle term follows
+   it as well: the second font-size scales it exactly (1rem / 16px is the visitor's text size as a factor); a browser
+   that cannot divide lengths keeps the first, which adds a share of the difference and comes within about a fifth.
+   At the normal text size both equal the plain viewport term. A word too long for its line breaks (overflow-wrap)
+   instead of being clipped or widening the page. */
+.tl-hero h1 { font-family: 'Archivo', 'Archivo Fallback Head', 'TikTok Sans', 'Cyrillic Fallback', Arial, sans-serif; font-size: clamp(2.875rem, calc(4.8vw + (1rem - 16px) * 3.6), 4.5rem); font-size: clamp(2.875rem, calc(4.8vw * (1rem / 16px)), 4.5rem); font-weight: 650; font-stretch: 105%; line-height: 1.12; letter-spacing: -0.04em; max-width: 13.653em; margin: 0; margin-inline-start: -0.025em; text-wrap: balance; overflow-wrap: break-word; }
+.tl-source { overflow-wrap: break-word; margin: 18px 0 0; font-size: 0.8125rem; line-height: 1.5; letter-spacing: 0.11em; text-transform: uppercase; color: var(--color-neutral-500); } /* where the headline is quoted from: a Latin citation, the same in every language */
+[dir='rtl'] .tl-source { text-align: right; }
 .tl-partners { border-top: 2px solid var(--color-neutral-800); border-bottom: 2px solid var(--color-neutral-800); padding-block: clamp(40px, 5vw, 64px); }
+.tl-base { margin-block-end: 44px; } /* Ankara, where the firm is based, opens the section; the cities of the local counsel follow */
+/* The name of Ankara is set like the city names (.tl-city) and 1.3 times their size: the same three terms as .tl-cities, each times 1.3. */
+.tl-base-name { margin: 0; overflow-wrap: break-word; overflow-wrap: anywhere; font-family: 'Archivo', 'Archivo Fallback Wide', 'TikTok Sans', 'Cyrillic Fallback', Arial, sans-serif; font-weight: 550; font-stretch: 110%; line-height: 1.3; letter-spacing: 0.055em; text-transform: uppercase; font-size: clamp(1.4625rem, calc(2.665vw + (1rem - 16px) * 1.95), 2.4375rem); font-size: clamp(1.4625rem, calc(2.665vw * (1rem / 16px)), 2.4375rem); }
 .tl-section-heading { display: flex; align-items: center; gap: 12px; margin-block-end: 32px; }
 .tl-section-heading::before { content: ''; width: 10px; height: 10px; flex: 0 0 10px; background: var(--color-accent); }
-.tl-section-heading h2 { margin: 0; font-size: 0.875rem; line-height: 1.5; font-weight: 400; letter-spacing: 0.11em; text-transform: uppercase; color: var(--color-neutral-400); }
-.tl-cities { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 0.65em; padding: 0; margin: 0; list-style: none; }
-.tl-city { display: inline-flex; align-items: baseline; gap: 0.65em; font-family: var(--font-heading); font-size: clamp(1.125rem, 2.05vw, 1.875rem); font-weight: 550; font-stretch: 110%; line-height: 1.45; letter-spacing: 0.055em; text-transform: uppercase; }
-.tl-city-name { white-space: nowrap; }
-.tl-separator { color: var(--color-neutral-700); font-weight: 400; }
-.tl-cities-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 0 40px; }
-.tl-cities-list .tl-city { padding-block: 14px; border-bottom: 2px solid var(--color-neutral-800); }
-.tl-note { font-size: 1rem; line-height: 1.75; color: var(--color-neutral-400); max-width: 65ch; margin: 32px 0 0; }
+.tl-section-heading h2 { min-width: 0; overflow-wrap: break-word; overflow-wrap: anywhere; margin: 0; font-size: 0.875rem; line-height: 1.5; font-weight: 400; letter-spacing: 0.11em; text-transform: uppercase; color: var(--color-neutral-400); }
+/* City names follow the visitor's text size in the same way as the headline: exactly where the browser can divide
+   lengths (second font-size), within about a fifth elsewhere (first). At the normal text size both equal 2.05vw. */
+.tl-cities { --tl-gap: 1.5em; display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px var(--tl-gap); padding: 0.2em 0; margin: -0.2em 0; list-style: none; overflow: hidden; font-size: clamp(1.125rem, calc(2.05vw + (1rem - 16px) * 1.5), 1.875rem); font-size: clamp(1.125rem, calc(2.05vw * (1rem / 16px)), 1.875rem); }
+.tl-city { position: relative; display: inline-flex; align-items: baseline; max-width: 100%; font-family: 'Archivo', 'Archivo Fallback Wide', 'TikTok Sans', 'Cyrillic Fallback', Arial, sans-serif; font-weight: 550; font-stretch: 110%; line-height: 1.45; letter-spacing: 0.055em; text-transform: uppercase; }
+.tl-city-name { min-width: 0; overflow-wrap: break-word; overflow-wrap: anywhere; }
+.tl-separator { position: absolute; inset-inline-end: 100%; width: var(--tl-gap); text-align: center; letter-spacing: 0; color: var(--color-neutral-700); font-weight: 400; } /* the dot sits in the gap before its city; the list clips it at the start of a row */
+.tl-note { overflow-wrap: break-word; font-size: 1rem; line-height: 1.75; color: var(--color-neutral-400); max-width: 37.5em; margin: 8px 0 0; }
 .tl-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding-block: 28px 40px; color: var(--color-neutral-500); }
 .tl-footer .tl-wordmark { color: var(--color-neutral-300); font-size: 0.75rem; }
 .tl-year { font-size: 0.75rem; letter-spacing: 0.15em; }
-.tl-page:lang(ar) { font-family: Tahoma, Arial, sans-serif; }
-.tl-page:lang(ar) h1, .tl-page:lang(ar) h2, .tl-page:lang(ar) .tl-city { font-family: inherit; letter-spacing: 0; }
-.tl-page:lang(ar) h1 { max-width: 24ch; line-height: 1.5; }
-.tl-page:lang(zh) h1, .tl-page:lang(ko) h1 { line-height: 1.3; letter-spacing: -0.02em; max-width: 20ch; }
+.tl-page:lang(ar) { font-family: 'Archivo', 'Readex Pro', Tahoma, Arial, sans-serif; }
+.tl-page:lang(ar) h1, .tl-page:lang(ar) h2, .tl-page:lang(ar) .tl-city, .tl-page:lang(ar) .tl-base-name { font-family: inherit; letter-spacing: 0; }
+.tl-page:lang(ar) h1 { max-width: 15em; line-height: 1.4; }
+.tl-page:lang(ar) .tl-section-heading h2 { font-size: 1rem; font-weight: 500; }
+.tl-page:lang(ar) .tl-note { font-size: 1.0625rem; }
+.tl-page:lang(ru) h1 { max-width: 14.894em; }
+.tl-page:lang(zh) h1, .tl-page:lang(ko) h1 { line-height: 1.3; letter-spacing: -0.02em; max-width: 12.412em; }
 .tl-page:lang(ko) h1 { word-break: keep-all; }
-.tl-page:lang(zh) .tl-city, .tl-page:lang(ko) .tl-city { letter-spacing: 0.02em; }
+.tl-page:lang(zh) .tl-city, .tl-page:lang(ko) .tl-city, .tl-page:lang(zh) .tl-base-name, .tl-page:lang(ko) .tl-base-name { letter-spacing: 0.02em; }
+@media (max-width: 878px) {
+  .tl-cities { font-size: 1.125rem; } /* up to this width the rem floor decides in every browser */
+  .tl-base-name { font-size: 1.4625rem; }
+}
 @media (max-width: 600px) {
   .tl-header { align-items: flex-start; padding-block: 22px 16px; gap: 16px; }
   .tl-languages { width: 100%; justify-content: space-between; gap: 0; }
   .tl-language { min-width: 0; padding-inline: 6px; }
   .tl-hero { min-height: 500px; min-height: clamp(420px, 66svh, 620px); padding-block: 64px 56px; }
-  .tl-hero h1 { max-width: 20ch; font-size: clamp(2.125rem, 7.8vw, 2.875rem); }
+  .tl-hero h1 { max-width: 12.412em; font-size: clamp(2.125rem, calc(7.8vw + (1rem - 16px) * 2.5), 2.875rem); font-size: clamp(2.125rem, calc(7.8vw * (1rem / 16px)), 2.875rem); }
   .tl-backdrop { width: 100%; opacity: 0.7; }
-  .tl-city { letter-spacing: 0.035em; }
-  .tl-cities { gap: 10px 0.55em; }
-  .tl-city { gap: 0.55em; }
+  .tl-city, .tl-base-name { letter-spacing: 0.035em; }
+  .tl-cities { row-gap: 10px; }
   .tl-section-heading { margin-block-end: 26px; }
-  .tl-note { margin-block-start: 28px; }
-  .tl-page:lang(ar) h1 { line-height: 1.5; }
+  .tl-page:lang(ru) h1 { font-stretch: 100%; }
+}
+@media (max-width: 339px) {
+  .tl-page:lang(ru) h1 { font-size: 2rem; } /* phones 312 to 339px wide: keeps the long last words of the Russian headline on one line at the normal text size */
+}
+@media (max-height: 560px) and (orientation: landscape) {
+  .tl-hero { min-height: 0; }
+}
+@media (max-height: 480px) and (orientation: landscape) {
+  .tl-hero { padding-block: 40px; }
+  .tl-hero h1 { font-size: clamp(2.125rem, calc(4.8vw + (1rem - 16px) * 2.6), 4.5rem); font-size: clamp(2.125rem, calc(4.8vw * (1rem / 16px)), 4.5rem); }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+@media (forced-colors: active) {
+  .tl-backdrop { display: none; }
+  .tl-language[aria-pressed='true']::after { background: ButtonText; }
+  .tl-hero-content::before, .tl-section-heading::before { background: CanvasText; }
+}
+@media print {
+  :root { color-scheme: light; --color-text: #fff; --color-neutral-100: #000; --color-neutral-300: #222; --color-neutral-400: #333; --color-neutral-500: #555; --color-neutral-700: #888; --color-neutral-800: #bbb; }
+  .tl-languages, .tl-backdrop { display: none; }
+  .tl-page, .tl-shell { min-height: 0; }
+  .tl-hero { min-height: 0; padding-block: 56px; }
+  .tl-partners { break-inside: avoid; }
+  .tl-hero-content::before, .tl-section-heading::before { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
 </style>
+<noscript><style>.tl-languages { display: none; }</style></noscript>
 </head>
 <body>
-<div id="top" class="tl-page" lang="la" dir="ltr">
+<div id="top" class="tl-page">
   <div class="tl-shell">
     <header class="tl-header">
       <a href="#top" class="tl-wordmark" translate="no" lang="en" dir="ltr">Tavus Law</a>
       <nav class="tl-languages" dir="ltr" aria-label="Lingua">
         
-          <button class="tl-language" type="button" title="Latine" aria-label="Latine" aria-pressed="true" data-language="la">LA</button>
+          <button class="tl-language" type="button" translate="no" aria-pressed="true" data-language="la">LA<span class="tl-language-name" lang="la"> Latine</span></button>
         
-          <button class="tl-language" type="button" title="English" aria-label="English" aria-pressed="false" data-language="en">EN</button>
+          <button class="tl-language" type="button" translate="no" aria-pressed="false" data-language="en">EN<span class="tl-language-name" lang="en"> English</span></button>
         
-          <button class="tl-language" type="button" title="Türkçe" aria-label="Türkçe" aria-pressed="false" data-language="tr">TR</button>
+          <button class="tl-language" type="button" translate="no" aria-pressed="false" data-language="tr">TR<span class="tl-language-name" lang="tr"> Türkçe</span></button>
         
-          <button class="tl-language" type="button" title="Русский" aria-label="Русский" aria-pressed="false" data-language="ru">RU</button>
+          <button class="tl-language" type="button" translate="no" aria-pressed="false" data-language="ru">RU<span class="tl-language-name" lang="ru"> Русский</span></button>
         
-          <button class="tl-language" type="button" title="中文" aria-label="中文" aria-pressed="false" data-language="zh">ZH</button>
+          <button class="tl-language" type="button" translate="no" aria-pressed="false" data-language="zh">ZH<span class="tl-language-name" lang="zh-Hans"> 中文</span></button>
         
-          <button class="tl-language" type="button" title="한국어" aria-label="한국어" aria-pressed="false" data-language="ko">KO</button>
+          <button class="tl-language" type="button" translate="no" aria-pressed="false" data-language="ko">KO<span class="tl-language-name" lang="ko"> 한국어</span></button>
         
-          <button class="tl-language" type="button" title="العربية" aria-label="العربية" aria-pressed="false" data-language="ar">AR</button>
+          <button class="tl-language" type="button" translate="no" aria-pressed="false" data-language="ar">AR<span class="tl-language-name" lang="ar"> العربية</span></button>
         
-          <button class="tl-language" type="button" title="Español" aria-label="Español" aria-pressed="false" data-language="es">ES</button>
+          <button class="tl-language" type="button" translate="no" aria-pressed="false" data-language="es">ES<span class="tl-language-name" lang="es"> Español</span></button>
         
       </nav>
     </header>
     <main>
-      <section class="tl-hero" aria-labelledby="tl-hero-title">
+      <section class="tl-hero">
         
-          <div class="tl-backdrop" aria-hidden="true" style="-webkit-mask-image: linear-gradient(to left bottom, #000 25%, transparent 78%); mask-image: linear-gradient(to left bottom, #000 25%, transparent 78%);">
-            <p class="tl-corpus" lang="la" dir="ltr">Deo auctore nostrum gubernantes imperium, quod nobis a caelesti maiestate traditum est, et bella feliciter peragimus et pacem decoramus et statum rei publicae sustentamus. · Iuri operam daturum prius nosse oportet, unde nomen iuris descendat. Est autem a iustitia appellatum: nam, ut eleganter Celsus definit, ius est ars boni et aequi. · Iustitia est constans et perpetua voluntas ius suum cuique tribuendi. · Iuris praecepta sunt haec: honeste vivere, alterum non laedere, suum cuique tribuere. · Iuris prudentia est divinarum atque humanarum rerum notitia, iusti atque iniusti scientia. · Lex est commune praeceptum, virorum prudentium consultum, delictorum quae sponte vel ignorantia contrahuntur coercitio, communis rei publicae sponsio. · Scire leges non hoc est verba earum tenere, sed vim ac potestatem. · Contra legem facit, qui id facit quod lex prohibet, in fraudem vero, qui salvis verbis legis sententiam eius circumvenit. · Cum igitur hominum causa omne ius constitutum sit, primo de personarum statu ac post de ceteris, ordinem edicti perpetui secuti et his proximos atque coniunctos applicantes titulos ut res patitur, dicemus. · Digna vox maiestate regnantis legibus alligatum se principem profiteri: adeo de auctoritate iuris nostra pendet auctoritas. Et re vera maius imperio est submittere legibus principatum. · Advocati, qui dirimunt ambigua fata causarum suaeque defensionis viribus in rebus saepe publicis ac privatis lapsa erigunt, fatigata reparant, non minus provident humano generi, quam si proeliis atque vulneribus patriam parentesque salvarent. · Placuit in omnibus rebus praecipuam esse iustitiae aequitatisque quam stricti iuris rationem. · Leges et constitutiones futuris certum est dare formam negotiis, non ad facta praeterita revocari, nisi nominatim etiam de praeterito tempore adhuc pendentibus negotiis cautum sit. · Huius edicti aequitas naturalis est. Quid enim tam congruum fidei humanae, quam ea quae inter eos placuerunt servare? · Ait praetor: pacta conventa, quae neque dolo malo, neque adversus leges plebis scita senatus consulta decreta edicta principum, neque quo fraus cui eorum fiat facta erunt, servabo. · Dolum malum esse omnem calliditatem fallaciam machinationem ad circumveniendum fallendum decipiendum alterum adhibitam. Labeonis definitio vera est. · Ei incumbit probatio qui dicit, non qui negat. · Ait praetor: quae fraudationis causa gesta erunt cum eo, qui fraudem non ignoraverit, de his curatori bonorum vel ei, cui de ea re actionem dare oportebit, intra annum, quo experiundi potestas fuerit, actionem dabo. · Furtum est contrectatio rei fraudulosa lucri faciendi gratia vel ipsius rei vel etiam usus eius possessionisve. Quod lege naturali prohibitum est admittere. · Nec de suspicionibus debere aliquem damnari: satius enim esse impunitum relinqui facinus nocentis quam innocentem damnari. · Cogitationis poenam nemo patitur. · Lata culpa est nimia neglegentia, id est non intellegere quod omnes intellegunt. · Regula est, quae rem quae est breviter enarrat. Non ex regula ius sumatur, sed ex iure quod est regula fiat. · Quod initio vitiosum est, non potest tractu temporis convalescere. · Consilii non fraudulenti nulla obligatio est: ceterum si dolus et calliditas intercessit, de dolo actio competit. · Nemo plus iuris ad alium transferre potest, quam ipse haberet. · Nullus videtur dolo facere, qui suo iure utitur. · Semper in dubiis benigniora praeferenda sunt. · In omnibus quidem, maxime tamen in iure aequitas spectanda est. · Nihil consensui tam contrarium est, qui ac bonae fidei iudicia sustinet, quam vis atque metus: quem comprobare contra bonos mores est. · Favorabiliores rei potius quam actores habentur. · Non omne quod licet honestum est. · Nemo damnum facit, nisi qui id fecit, quod facere ius non habet. · Etsi nihil facile mutandum est ex sollemnibus, tamen ubi aequitas evidens poscit, subveniendum est. · Impossibilium nulla obligatio est. · Omnis definitio in iure civili periculosa est: parum est enim, ut non subverti posset. · Iure naturae aequum est neminem cum alterius detrimento et iniuria fieri locupletiorem. · Res iudicata pro veritate accipitur. · Consuetudinis ususque longaevi non vilis auctoritas est, verum non usque adeo sui valitura momento, ut aut rationem vincat aut legem. · Naturalia quidem iura, quae apud omnes gentes peraeque servantur, divina quadam providentia constituta, semper firma atque immutabilia permanent. · Omne autem ius, quo utimur, vel ad personas pertinet vel ad res vel ad actiones. · Actio autem nihil aliud est, quam ius persequendi iudicio quod sibi debetur.</p>
+          <div class="tl-backdrop" aria-hidden="true">
+            <p class="tl-corpus" lang="la" dir="ltr" data-text="Deo auctore nostrum gubernantes imperium, quod nobis a caelesti maiestate traditum est, et bella feliciter peragimus et pacem decoramus et statum rei publicae sustentamus. · Iuri operam daturum prius nosse oportet, unde nomen iuris descendat. Est autem a iustitia appellatum: nam, ut eleganter Celsus definit, ius est ars boni et aequi. · Iustitia est constans et perpetua voluntas ius suum cuique tribuendi. · Iuris praecepta sunt haec: honeste vivere, alterum non laedere, suum cuique tribuere. · Iuris prudentia est divinarum atque humanarum rerum notitia, iusti atque iniusti scientia. · Lex est commune praeceptum, virorum prudentium consultum, delictorum quae sponte vel ignorantia contrahuntur coercitio, communis rei publicae sponsio. · Scire leges non hoc est verba earum tenere, sed vim ac potestatem. · Contra legem facit, qui id facit quod lex prohibet, in fraudem vero, qui salvis verbis legis sententiam eius circumvenit. · Cum igitur hominum causa omne ius constitutum sit, primo de personarum statu ac post de ceteris, ordinem edicti perpetui secuti et his proximos atque coniunctos applicantes titulos ut res patitur, dicemus. · Digna vox maiestate regnantis legibus alligatum se principem profiteri: adeo de auctoritate iuris nostra pendet auctoritas. Et re vera maius imperio est submittere legibus principatum. · Advocati, qui dirimunt ambigua fata causarum suaeque defensionis viribus in rebus saepe publicis ac privatis lapsa erigunt, fatigata reparant, non minus provident humano generi, quam si proeliis atque vulneribus patriam parentesque salvarent. · Placuit in omnibus rebus praecipuam esse iustitiae aequitatisque quam stricti iuris rationem. · Leges et constitutiones futuris certum est dare formam negotiis, non ad facta praeterita revocari, nisi nominatim etiam de praeterito tempore adhuc pendentibus negotiis cautum sit. · Huius edicti aequitas naturalis est. Quid enim tam congruum fidei humanae, quam ea quae inter eos placuerunt servare? · Ait praetor: pacta conventa, quae neque dolo malo, neque adversus leges plebis scita senatus consulta decreta edicta principum, neque quo fraus cui eorum fiat facta erunt, servabo. · Dolum malum esse omnem calliditatem fallaciam machinationem ad circumveniendum fallendum decipiendum alterum adhibitam. Labeonis definitio vera est. · Ei incumbit probatio qui dicit, non qui negat. · Ait praetor: quae fraudationis causa gesta erunt cum eo, qui fraudem non ignoraverit, de his curatori bonorum vel ei, cui de ea re actionem dare oportebit, intra annum, quo experiundi potestas fuerit, actionem dabo. · Furtum est contrectatio rei fraudulosa lucri faciendi gratia vel ipsius rei vel etiam usus eius possessionisve. Quod lege naturali prohibitum est admittere. · Nec de suspicionibus debere aliquem damnari: satius enim esse impunitum relinqui facinus nocentis quam innocentem damnari. · Cogitationis poenam nemo patitur. · Lata culpa est nimia neglegentia, id est non intellegere quod omnes intellegunt. · Regula est, quae rem quae est breviter enarrat. Non ex regula ius sumatur, sed ex iure quod est regula fiat. · Quod initio vitiosum est, non potest tractu temporis convalescere. · Consilii non fraudulenti nulla obligatio est: ceterum si dolus et calliditas intercessit, de dolo actio competit. · Nemo plus iuris ad alium transferre potest, quam ipse haberet. · Nullus videtur dolo facere, qui suo iure utitur. · Semper in dubiis benigniora praeferenda sunt. · In omnibus quidem, maxime tamen in iure aequitas spectanda est. · Nihil consensui tam contrarium est, qui ac bonae fidei iudicia sustinet, quam vis atque metus: quem comprobare contra bonos mores est. · Favorabiliores rei potius quam actores habentur. · Non omne quod licet honestum est. · Nemo damnum facit, nisi qui id fecit, quod facere ius non habet. · Etsi nihil facile mutandum est ex sollemnibus, tamen ubi aequitas evidens poscit, subveniendum est. · Impossibilium nulla obligatio est. · Omnis definitio in iure civili periculosa est: parum est enim, ut non subverti posset. · Iure naturae aequum est neminem cum alterius detrimento et iniuria fieri locupletiorem. · Res iudicata pro veritate accipitur. · Consuetudinis ususque longaevi non vilis auctoritas est, verum non usque adeo sui valitura momento, ut aut rationem vincat aut legem. · Naturalia quidem iura, quae apud omnes gentes peraeque servantur, divina quadam providentia constituta, semper firma atque immutabilia permanent. · Omne autem ius, quo utimur, vel ad personas pertinet vel ad res vel ad actiones. · Actio autem nihil aliud est, quam ius persequendi iudicio quod sibi debetur."></p>
           </div>
         
         <div class="tl-hero-content">
-          <h1 id="tl-hero-title" lang="la">Perennia iuris Romani principia ad ultimos technologiae fines afferimus.</h1>
+          <h1 id="tl-hero-title">Iustitiam namque colimus et boni et aequi notitiam profitemur.</h1>
+          <p class="tl-source" id="tl-hero-source" lang="la" dir="ltr" translate="no">Ulpianus · Digesta 1.1.1.1</p>
         </div>
       </section>
-      <section class="tl-partners" aria-labelledby="tl-partners-title">
-        <div class="tl-section-heading">
-          <h2 id="tl-partners-title" lang="la">Socii forenses</h2>
-        </div>
+      <div class="tl-partners">
+        <section class="tl-base" aria-labelledby="tl-base-title">
+          <h2 class="tl-base-name" id="tl-base-title">Ancyra</h2>
+          <p class="tl-note">Ancyrae sedem habentes, causas cum advocatis cuiusque loci coniunctissime agimus.</p>
+        </section>
+        <section aria-labelledby="tl-partners-title">
+          <div class="tl-section-heading">
+            <h2 id="tl-partners-title">Advocati cuiusque loci</h2>
+          </div>
         
-          <ul class="tl-cities" lang="la" role="list">
+            <ul class="tl-cities" role="list">
             
-              <li class="tl-city"><span class="tl-city-name">Novum Eboracum</span><span class="tl-separator" aria-hidden="true">·</span></li>
+                <li class="tl-city"><span class="tl-city-name">Novum Eboracum</span></li>
             
-              <li class="tl-city"><span class="tl-city-name">Istanbulum</span><span class="tl-separator" aria-hidden="true">·</span></li>
+                <li class="tl-city"><span class="tl-separator" aria-hidden="true">·</span><span class="tl-city-name">Istanbulum</span></li>
             
-              <li class="tl-city"><span class="tl-city-name">Londinium</span><span class="tl-separator" aria-hidden="true">·</span></li>
+                <li class="tl-city"><span class="tl-separator" aria-hidden="true">·</span><span class="tl-city-name">Londinium</span></li>
             
-              <li class="tl-city"><span class="tl-city-name">Dubaium</span><span class="tl-separator" aria-hidden="true">·</span></li>
+                <li class="tl-city"><span class="tl-separator" aria-hidden="true">·</span><span class="tl-city-name">Dubaium</span></li>
             
-              <li class="tl-city"><span class="tl-city-name">Singapura</span><span class="tl-separator" aria-hidden="true">·</span></li>
+                <li class="tl-city"><span class="tl-separator" aria-hidden="true">·</span><span class="tl-city-name">Singapura</span></li>
             
-              <li class="tl-city"><span class="tl-city-name">Varsovia</span><span class="tl-separator" aria-hidden="true">·</span></li>
+                <li class="tl-city"><span class="tl-separator" aria-hidden="true">·</span><span class="tl-city-name">Varsovia</span></li>
             
-              <li class="tl-city"><span class="tl-city-name">Moscua</span><span class="tl-separator" aria-hidden="true">·</span></li>
+                <li class="tl-city"><span class="tl-separator" aria-hidden="true">·</span><span class="tl-city-name">Moscua</span></li>
             
-              <li class="tl-city"><span class="tl-city-name">Pechinum</span><span class="tl-separator" aria-hidden="true">·</span></li>
+                <li class="tl-city"><span class="tl-separator" aria-hidden="true">·</span><span class="tl-city-name">Pechinum</span></li>
             
-              <li class="tl-city"><span class="tl-city-name">Hongcongum</span><span class="tl-separator" aria-hidden="true">·</span></li>
+                <li class="tl-city"><span class="tl-separator" aria-hidden="true">·</span><span class="tl-city-name">Hongcongum</span></li>
             
-              <li class="tl-city"><span class="tl-city-name">Matritum</span><span class="tl-separator" aria-hidden="true">·</span></li>
+                <li class="tl-city"><span class="tl-separator" aria-hidden="true">·</span><span class="tl-city-name">Matritum</span></li>
             
-              <li class="tl-city"><span class="tl-city-name">Angelopolis</span><span class="tl-separator" aria-hidden="true"></span></li>
+                <li class="tl-city"><span class="tl-separator" aria-hidden="true">·</span><span class="tl-city-name">Angelopolis</span></li>
             
-          </ul>
-        
-        
-        <p class="tl-note" lang="la">Omnem causam in arta societate cum optimis cuiusque loci advocatis ducimus.</p>
-      </section>
+            </ul>
+        </section>
+      </div>
     </main>
     <footer class="tl-footer">
       <span class="tl-wordmark" translate="no" lang="en" dir="ltr">Tavus Law</span>
@@ -173,67 +254,111 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-accent); 
   </div>
 </div>
 
-<script type="application/json" id="tl-translations">{"la":{"name":"Latine","label":"LA","langLabel":"Lingua","partners":"Socii forenses","hero":"Perennia iuris Romani principia ad ultimos technologiae fines afferimus.","note":"Omnem causam in arta societate cum optimis cuiusque loci advocatis ducimus.","cities":["Novum Eboracum","Istanbulum","Londinium","Dubaium","Singapura","Varsovia","Moscua","Pechinum","Hongcongum","Matritum","Angelopolis"]},"en":{"name":"English","label":"EN","langLabel":"Language","partners":"Litigation partners","hero":"We bring the enduring principles of Roman law to the frontiers of technology.","note":"We lead each case in close partnership with the finest local litigators.","cities":["New York","Istanbul","London","Dubai","Singapore","Warsaw","Moscow","Beijing","Hong Kong","Madrid","Los Angeles"]},"tr":{"name":"Türkçe","label":"TR","langLabel":"Dil","partners":"Dava ortaklarımız","hero":"Roma hukukunun kalıcı ilkelerini teknolojinin en ileri noktalarına taşıyoruz.","note":"Her davayı en iyi yerel dava avukatlarıyla yakın iş birliği içinde yönetiyoruz.","cities":["New York","İstanbul","Londra","Dubai","Singapur","Varşova","Moskova","Pekin","Hong Kong","Madrid","Los Angeles"]},"ru":{"name":"Русский","label":"RU","langLabel":"Язык","partners":"Партнёры по судебным делам","hero":"Мы привносим непреходящие принципы римского права в передовые области технологий.","note":"Каждое дело мы ведём в тесном сотрудничестве с лучшими местными судебными юристами.","cities":["Нью-Йорк","Стамбул","Лондон","Дубай","Сингапур","Варшава","Москва","Пекин","Гонконг","Мадрид","Лос-Анджелес"]},"zh":{"name":"中文","label":"ZH","langLabel":"语言","partners":"诉讼合作伙伴","hero":"我们将罗马法历久弥新的原则引入前沿科技领域。","note":"我们主导每一起案件，并与当地最优秀的诉讼律师紧密合作。","cities":["纽约","伊斯坦布尔","伦敦","迪拜","新加坡","华沙","莫斯科","北京","香港","马德里","洛杉矶"]},"ko":{"name":"한국어","label":"KO","langLabel":"언어","partners":"소송 파트너","hero":"우리는 오랜 세월 이어져 온 로마법의 원칙을 기술의 최전선에 접목합니다.","note":"현지 최고의 소송 변호사들과 긴밀히 협력하며 모든 사건을 이끕니다.","cities":["뉴욕","이스탄불","런던","두바이","싱가포르","바르샤바","모스크바","베이징","홍콩","마드리드","로스앤젤레스"]},"ar":{"name":"العربية","label":"AR","langLabel":"اللغة","partners":"شركاء التقاضي","hero":"ننقل مبادئ القانون الروماني الراسخة إلى طليعة التكنولوجيا.","note":"نقود كل قضية في شراكة وثيقة مع أفضل المحامين المحليين المتخصصين في التقاضي.","cities":["نيويورك","إسطنبول","لندن","دبي","سنغافورة","وارسو","موسكو","بكين","هونغ كونغ","مدريد","لوس أنجلوس"]},"es":{"name":"Español","label":"ES","langLabel":"Idioma","partners":"Socios en litigios","hero":"Llevamos los principios perdurables del derecho romano a las fronteras de la tecnología.","note":"Dirigimos cada caso en estrecha colaboración con los mejores abogados litigantes locales.","cities":["Nueva York","Estambul","Londres","Dubái","Singapur","Varsovia","Moscú","Pekín","Hong Kong","Madrid","Los Ángeles"]}}</script>
+<script type="application/json" id="tl-translations">{"la":{"name":"Latine","label":"LA","langLabel":"Lingua","partners":"Advocati cuiusque loci","base":"Ancyra","hero":"Iustitiam namque colimus et boni et aequi notitiam profitemur.","note":"Ancyrae sedem habentes, causas cum advocatis cuiusque loci coniunctissime agimus.","cities":["Novum Eboracum","Istanbulum","Londinium","Dubaium","Singapura","Varsovia","Moscua","Pechinum","Hongcongum","Matritum","Angelopolis"]},"en":{"name":"English","label":"EN","langLabel":"Language","partners":"Local litigation counsel","base":"Ankara","hero":"We cultivate justice and profess knowledge of the good and the equitable.","note":"Based in Ankara, we handle cases in close collaboration with local litigation counsel.","cities":["New York","Istanbul","London","Dubai","Singapore","Warsaw","Moscow","Beijing","Hong Kong","Madrid","Los Angeles"]},"tr":{"name":"Türkçe","label":"TR","langLabel":"Dil","partners":"Dava iş birliklerimiz","base":"Ankara","hero":"Adalete hizmet ediyor, iyi ve adil olanın bilgisini meslek ediniyoruz.","note":"Merkezimiz Ankara’da; davaları yerel avukatlarla yakın iş birliği içinde yürütüyoruz.","cities":["New York","İstanbul","Londra","Dubai","Singapur","Varşova","Moskova","Pekin","Hong Kong","Madrid","Los Angeles"]},"ru":{"name":"Русский","label":"RU","langLabel":"Язык","partners":"Местные судебные юристы","base":"Анкара","hero":"Мы заботимся о\u00a0правосудии и\u00a0возвещаем понятия доброго и\u00a0справедливого.","note":"Наш офис находится в\u00a0Анкаре; дела мы ведём в\u00a0тесном сотрудничестве с\u00a0местными судебными юристами.","cities":["Нью-Йорк","Стамбул","Лондон","Дубай","Сингапур","Варшава","Москва","Пекин","Гонконг","Мадрид","Лос-Анджелес"]},"zh":{"name":"中文","label":"ZH","langLabel":"语言","partners":"诉讼合作律师","base":"安卡拉","hero":"我们耕耘正义，传播善良和公正的知识。","note":"我们立足安卡拉，与各地诉讼律师紧密合作，共同办理案件。","cities":["纽约","伊斯坦布尔","伦敦","迪拜","新加坡","华沙","莫斯科","北京","香港","马德里","洛杉矶"]},"ko":{"name":"한국어","label":"KO","langLabel":"언어","partners":"소송 협력 변호사","base":"앙카라","hero":"우리는 정의를 받들고, 선과 형평에 대한 앎을 업으로 삼습니다.","note":"앙카라에 기반을 두고, 각 지역의 소송 변호사들과 긴밀히 협력하여 사건을 수행합니다.","cities":["뉴욕","이스탄불","런던","두바이","싱가포르","바르샤바","모스크바","베이징","홍콩","마드리드","로스앤젤레스"]},"ar":{"name":"العربية","label":"AR","langLabel":"اللغة","partners":"محامون محليون نتعاون معهم","base":"أنقرة","hero":"نخدم العدالة ونتّخذ معرفة الخير والإنصاف مهنةً لنا.","note":"من مقرّنا في أنقرة، نتولى القضايا بالتعاون الوثيق مع محامين محليين متخصصين في التقاضي.","cities":["نيويورك","إسطنبول","لندن","دبي","سنغافورة","وارسو","موسكو","بكين","هونغ كونغ","مدريد","لوس أنجلوس"]},"es":{"name":"Español","label":"ES","langLabel":"Idioma","partners":"Abogados corresponsales","base":"Ankara","hero":"Cultivamos la justicia y profesamos el conocimiento de lo bueno y de lo equitativo.","note":"Con sede en Ankara, llevamos los casos en estrecha colaboración con abogados litigantes locales.","cities":["Nueva York","Estambul","Londres","Dubái","Singapur","Varsovia","Moscú","Pekín","Hong Kong","Madrid","Los Ángeles"]}}</script>
 <script>
 (() => {
   const translations = JSON.parse(document.getElementById('tl-translations').textContent);
   const key = 'tavus-law-lang';
-  const page = document.getElementById('top');
+  const root = document.documentElement;
   const nav = document.querySelector('.tl-languages');
   const valid = code => Object.prototype.hasOwnProperty.call(translations, code);
-  function setLanguage(code, persist = false) {
+  // Links and the stored choice use these short codes. The page's lang attribute is the same, except Chinese,
+  // which is marked as Simplified Chinese.
+  const tags = { zh: 'zh-Hans' };
+  let shown = 'la'; // the language on screen
+  // Arabic and Russian are set in their own font files (Archivo has no Arabic or Cyrillic). Their word spaces and
+  // full stops still come from Archivo, so both files are needed before that text can be laid out for good.
+  const webFont = { ar: 'Readex Pro', ru: 'TikTok Sans' };
+  const loadFont = code => webFont[code] && document.fonts && document.fonts.load
+    ? Promise.all([
+        document.fonts.load('1em "' + webFont[code] + '"', translations[code].hero),
+        document.fonts.load('1em Archivo', ' .'),
+      ]).catch(() => {})
+    : null;
+  function setLanguage(code) {
     if (!valid(code)) return;
     const t = translations[code];
-    const direction = code === 'ar' ? 'rtl' : 'ltr';
-    document.documentElement.lang = code;
-    document.documentElement.dir = direction;
-    page.lang = code;
-    page.dir = direction;
+    shown = code;
+    root.lang = tags[code] || code;
+    root.dir = code === 'ar' ? 'rtl' : 'ltr';
     document.getElementById('tl-hero-title').textContent = t.hero;
+    document.getElementById('tl-base-title').textContent = t.base;
     document.getElementById('tl-partners-title').textContent = t.partners;
     document.querySelector('.tl-note').textContent = t.note;
-    page.querySelectorAll('[lang]:not([translate="no"]):not(.tl-corpus)').forEach(el => { el.lang = code; });
+    // The list in the HTML is the template: every language lists the same cities in the same order.
+    document.querySelectorAll('.tl-city-name').forEach((name, index) => { name.textContent = t.cities[index]; });
     nav.setAttribute('aria-label', t.langLabel);
     nav.querySelectorAll('button').forEach(button => {
       button.setAttribute('aria-pressed', String(button.dataset.language === code));
     });
-    const cities = document.querySelector('.tl-cities');
-    const fragment = document.createDocumentFragment();
-    t.cities.forEach((city, index) => {
-      const item = document.createElement('li');
-      item.className = 'tl-city';
-      const name = document.createElement('span');
-      name.className = 'tl-city-name';
-      name.textContent = city;
-      item.appendChild(name);
-      if (index < t.cities.length - 1 && !cities.classList.contains('tl-cities-list')) {
-        const separator = document.createElement('span');
-        separator.className = 'tl-separator';
-        separator.setAttribute('aria-hidden', 'true');
-        separator.textContent = '·';
-        item.appendChild(separator);
-      }
-      fragment.appendChild(item);
-    });
-    cities.replaceChildren(fragment);
-    const backdrop = document.querySelector('.tl-backdrop');
-    if (backdrop) {
-      const mask = 'linear-gradient(to ' + (direction === 'rtl' ? 'right' : 'left') + ' bottom, #000 25%, transparent 78%)';
-      backdrop.style.maskImage = mask;
-      backdrop.style.webkitMaskImage = mask;
-    }
-    if (persist) {
-      try { localStorage.setItem(key, code); } catch {}
-    }
   }
+  // A click is recorded at once, on the history entry it was made on: stored as the visitor's choice and put in
+  // the address. Only the painting may wait for a font.
+  let chosen; // the choice, kept here as well: some viewers allow neither storage nor a change of address
+  const record = code => {
+    chosen = code;
+    try { localStorage.setItem(key, code); } catch {}
+    // Keep the address bar a link to what is on screen. Other parameters and the #fragment are kept
+    // (the query is re-serialised, so %20 may become +).
+    try {
+      const url = new URL(location.href);
+      if (code === 'la') url.searchParams.delete('lang'); else url.searchParams.set('lang', code);
+      history.replaceState(null, '', url);
+    } catch {}
+  };
+  let wanted; // the language asked for last; a switch that is still waiting for its font gives way to a later one
+  // Shows a language. byClick: also record it as the visitor's choice (Back and Forward do not).
+  const choose = (code, byClick) => {
+    wanted = code;
+    if (byClick) record(code);
+    const apply = () => { if (wanted === code) setLanguage(code); };
+    // Arabic or Russian whose font is not in yet: wait for it (0.7 s at most) so the new text is painted once.
+    const ready = loadFont(code);
+    if (ready && !document.fonts.check('1em "' + webFont[code] + '"', translations[code].hero)) {
+      Promise.race([ready, new Promise(resolve => setTimeout(resolve, 700))]).then(apply, apply);
+    } else {
+      apply();
+    }
+  };
   nav.addEventListener('click', event => {
     const button = event.target.closest('button[data-language]');
-    if (button && nav.contains(button)) setLanguage(button.dataset.language, true);
+    if (button) choose(button.dataset.language, true);
   });
-  try {
-    const saved = localStorage.getItem(key);
-    if (valid(saved)) setLanguage(saved);
-  } catch {}
+  // Fetch a language's font as soon as its button is hovered, focused or touched, so it is there by the click.
+  const warm = event => {
+    const button = event.target.closest('button[data-language]');
+    if (button) loadFont(button.dataset.language);
+  };
+  nav.addEventListener('pointerover', warm);
+  nav.addEventListener('focusin', warm);
+  // What an address shows: ?lang= wins, then the visitor's stored choice (where storage is refused, the choice
+  // made on this page), then the Latin in the HTML.
+  const wantedByAddress = () => {
+    let code = (new URLSearchParams(location.search).get('lang') || '').toLowerCase();
+    try { if (!valid(code)) code = localStorage.getItem(key); } catch { if (!valid(code)) code = chosen; }
+    return valid(code) ? code : 'la';
+  };
+  const first = wantedByAddress();
+  if (first !== 'la') setLanguage(first);
+  // Back and Forward can change the address without loading the page again (after the wordmark's #top link, for
+  // example), and the browser can bring the page back from its cache without running it again. Either way, show
+  // what the address shows on a fresh visit. Nothing is stored and the address is left alone.
+  const follow = () => {
+    const code = wantedByAddress();
+    if (code !== shown) choose(code, false); else wanted = code; // else: drop a switch still waiting for its font
+  };
+  window.addEventListener('popstate', follow);
+  window.addEventListener('pageshow', event => { if (event.persisted) follow(); });
+  // The script in <head> hid the page for a non-Latin choice. Show it now or, for Arabic and Russian, as soon as
+  // that font is in (1.2 s at most), so the text is painted once and nothing re-wraps.
+  const fontReady = root.classList.contains('tl-i18n-pending') && loadFont(shown);
+  if (fontReady) {
+    const show = () => root.classList.remove('tl-i18n-fonts');
+    root.classList.replace('tl-i18n-pending', 'tl-i18n-fonts');
+    Promise.race([fontReady, new Promise(resolve => setTimeout(resolve, 1200))]).then(show, show);
+  } else {
+    root.classList.remove('tl-i18n-pending');
+  }
 })();
 </script>
 </body>
